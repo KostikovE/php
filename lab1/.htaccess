@@ -1,0 +1,9 @@
+
+Options +Indexes
+DirectoryIndex index.php
+AddDefaultCharset utf-8
+# Настройки PHP
+php_flag display_errors On
+php_flag display_startup_errors On
+php_value error_reporting 32767
+php_value error_log /home/login/domains/f1172030.xsph.ru/php_errors.log
