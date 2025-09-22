@@ -37,11 +37,12 @@ $max = 7;
 	    case 7:
 	        echo "Это выходной день";
 	        break;
-	    case ($number < $min || $number > $max):
-	        echo "Неизвестный день";
-	        break;
+	    default:
+			echo "Неизвестный день";
+			break;
 	}
 		?> 
 
 </body>
+
 </html>
