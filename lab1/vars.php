@@ -1,6 +1,8 @@
 <?php
 $name = 'Домовой';
 $age = 20;
+$name_tip = gettype($name);
+$age_tip= gettype($age);
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -12,17 +14,16 @@ $age = 20;
 </head>
 <body>
 	<h1>Переменные и вывод</h1>
-	
+	<p>Меня зовут: <?php echo $name; ?></p>
+	<p>Мне <?php echo $age; ?> лет</p>
+	<p>Тип переменной name: <?php echo $nameType; ?></p>
+	<p>Тип переменной age: <?php echo $ageType; ?></p>
 <?php 
-    echo "Меня зовут: $name<br />" ; 
-	echo "Мне $age лет<br />";
-    echo gettype ($name), "\n";
-    echo gettype ($age);
     unset($name);
     unset($age);
-    echo($name);
-    echo($age); ?> 	
+    ?> 	
 
 
 </body>
+
 </html>
