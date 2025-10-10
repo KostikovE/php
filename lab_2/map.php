@@ -12,7 +12,7 @@ function map(array $array, callable $callback): array
     $result = [];
     
     foreach ($array as $index => $item) {
-        $result[$index] = $callback($item, $index);
+        $result[$index] = $callback($item);
     }
     
     return $result;
