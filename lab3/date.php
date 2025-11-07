@@ -1,14 +1,14 @@
 <?php
 
 
-    $now = new DateTime();
-    echo $now->format('Y-m-d H:i:s');
+    $now = time(;
+    echo $now;
     echo "<br>";
     
-    $birthday = '2005-07-21';
-    $bomboclat = new DateTime($birthday);
-    echo $bomboclat->format('d.m.Y');
-    echo "<br>";
+    $birthday = mktime(0,0,0,7,21,2005);
+	echo $birthday;
+	echo"<br>";
+    
     
     $hour = getdate();
     $current_hour = $hour['hours'];
