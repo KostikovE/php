@@ -1,3 +1,0 @@
-echo "Order Deny,Allow" > db/.htaccess
-echo "Deny from all" >> db/.htaccess
-chmod 644 db/.htaccess
