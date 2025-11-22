@@ -1,6 +1,6 @@
 <?php
 function getTable($rows = 5, $cols = 5, $color = 'lightblue') {
-    echo "<table border='1' width='200'>";
+    echo "<table width='200'>";
     for ($tr = 1; $tr <= $rows; $tr++) {
         echo "<tr>";
         for ($td = 1; $td <= $cols; $td++) {
