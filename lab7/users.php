@@ -1,17 +1,10 @@
 <?php
-/**
- * users.php - решение всех пунктов задания
- */
 
-// ================================================
-// ЗАДАНИЕ: Добавление автозагрузки классов
-// ================================================
 spl_autoload_register(function ($className) {
-    // Преобразуем namespace в путь к файлу
-    // MyProject\Classes\User -> MyProject/Classes/User.php
+  
     $filePath = str_replace('\\', '/', $className) . '.php';
     
-    // Если файл существует - подключаем
+
     if (file_exists($filePath)) {
         require_once $filePath;
     }
@@ -53,5 +46,6 @@ unset($user1);
 unset($user2);
 unset($user3);
 unset($superUser);
+
 
 ?>
