@@ -636,7 +636,7 @@ if ($conn && $conn->thread_id) {
             Соединение с БД не установлено
         </div>
         <?php endif; ?>
-        
+ //информация для пользователя (к какой базе подключились, какой пользователь)       
         <div class="config-info">
             <strong>Конфигурация подключения:</strong><br>
             Хост: <?php echo DB_HOST; ?> | База: <?php echo DB_NAME; ?> | Пользователь: <?php echo DB_USER; ?>
